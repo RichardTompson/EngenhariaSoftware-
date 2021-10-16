@@ -1257,7 +1257,7 @@ class graficos:
         # centralizando as barras do gráfico
         # centralizador: xs = [i +0.1 for i, _ in enumerate (df[coluna])]
         # criando grafico
-        plt.hist(df[coluna], bins=30, histtype='barstacked')
+        plt.hist(df[coluna], bins=100, histtype='barstacked')
         
         # setando titulo
         plt.title(title, fontweight='bold')
