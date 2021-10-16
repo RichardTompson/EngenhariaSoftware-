@@ -294,8 +294,7 @@ class SCR:
         tela = Tk()
 
         # criando variavel
-        valor = StringVar(tela)   
-             
+        valor = StringVar(tela)                
                   
         # setando titulo
         tela.title("Menor ou Igual a: ")
