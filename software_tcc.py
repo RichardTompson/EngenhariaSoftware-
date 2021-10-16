@@ -1255,10 +1255,10 @@ class graficos:
     def histograma(self, df, coluna, title, xlabel):  
         # bins = 5?
         # centralizando as barras do gráfico
-        xs = [i +0.1 for i, _ in enumerate (df[coluna])]
+        # centralizador: xs = [i +0.1 for i, _ in enumerate (df[coluna])]
         # criando grafico
-        #plt.hist(df[coluna], bins=12, histtype='barstacked')
-        plt.hist(xs, bins=12, histtype='barstacked')
+        plt.hist(df[coluna], bins=12, histtype='barstacked')
+        
         # setando titulo
         plt.title(title, fontweight='bold')
         # setando eixo x
@@ -1270,7 +1270,7 @@ class graficos:
         plt.grid(axis='y')         
 
         # rotacionando eixo x 
-        plt.xticks([i + 0.5 for i, _ in enumerate(df[coluna])], rotation = 55)    
+        plt.xticks(rotation = 55)    
        
         # exibindo valores inteiros no eixo y
         yint = []
