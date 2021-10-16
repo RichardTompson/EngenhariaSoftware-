@@ -1257,7 +1257,7 @@ class graficos:
         # centralizando as barras do gráfico
         # centralizador: xs = [i +0.1 for i, _ in enumerate (df[coluna])]
         # criando grafico
-        plt.hist(df[coluna], bins=12, histtype='barstacked')
+        plt.hist(df[coluna], bins=30, histtype='barstacked')
         
         # setando titulo
         plt.title(title, fontweight='bold')
@@ -1270,7 +1270,7 @@ class graficos:
         plt.grid(axis='y')         
 
         # rotacionando eixo x 
-        plt.xticks(rotation = 55)    
+        plt.xticks(rotation = 90)    
        
         # exibindo valores inteiros no eixo y
         yint = []
